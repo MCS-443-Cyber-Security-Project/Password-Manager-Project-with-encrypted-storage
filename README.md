@@ -41,9 +41,12 @@ This is a secure password manager project designed to store encrypted passwords 
 3. Import the SQL file provided in the repository into the newly created database.
    - Use the **Import** tab in phpMyAdmin to upload the SQL file.
 4. Create Database and Table using the following table:
+   
 CREATE DATABASE pass_manager;  //To create database name 'pass_manager'.
 USE pass_manager;
-CREATE TABLE users (                   // Create table 'users' from the database pass_mananger
+
+ // Create table 'users' from the database pass_mananger
+CREATE TABLE users (   
     id INT AUTO_INCREMENT PRIMARY KEY,  
     username VARCHAR(50) NOT NULL UNIQUE,  
     email VARCHAR(100) NOT NULL UNIQUE,  
